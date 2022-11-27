@@ -15,6 +15,9 @@ router.get("/protected", requireLogin, (req, res) => {
     res.send("hello")
 })
 
+router.post("/",(req,res)=>{
+    res.send("hello");
+})
 
 router.post('/signup', (req, res) => {
     const { name, email, password } = req.body
